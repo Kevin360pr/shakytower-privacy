@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaky Tower — Stack. Balance. Survive.</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0e0e20;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      background: #0e0e20;
+    }
+    .hero-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 27px;
+      margin: 0 auto 28px;
+      background: #1a1a35;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      border: 2px solid #2a2a50;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.1;
+    }
+    .hero h1 span { color: #7ec8e8; }
+    .hero p {
+      font-size: 18px;
+      color: #8888aa;
+      margin-top: 14px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-appstore {
+      display: inline-block;
+      margin-top: 32px;
+      background: #f0f0ff;
+      color: #0e0e20;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-appstore:hover { opacity: 0.85; }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+    .feature-card {
+      background: #16162a;
+      border: 1px solid #2a2a45;
+      border-radius: 18px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .feature-icon { font-size: 36px; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+    .feature-card p { font-size: 14px; color: #8888aa; }
+
+    /* SUPPORT */
+    .support {
+      max-width: 640px;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .support h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .support p { font-size: 16px; color: #8888aa; margin-bottom: 24px; }
+    .support a {
+      color: #7ec8e8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .support a:hover { text-decoration: underline; }
+
+    /* FAQ */
+    .faq {
+      max-width: 640px;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+    }
+    .faq h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .faq-item {
+      background: #16162a;
+      border: 1px solid #2a2a45;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .faq-item h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: #f0f0ff; }
+    .faq-item p { font-size: 14px; color: #8888aa; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid #2a2a45;
+      font-size: 14px;
+      color: #555570;
+    }
+    footer a { color: #7ec8e8; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-icon">🏗️</div>
+    <h1>SHAKY<br><span>TOWER</span></h1>
+    <p>Stack blocks. Keep your balance. How high can you go?</p>
+    <a class="btn-appstore" href="https://apps.apple.com/app/shaky-tower" target="_blank">
+      ⬇ Download on the App Store
+    </a>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h3>Precision Stacking</h3>
+      <p>Tap at the perfect moment to land each block cleanly. Timing is everything.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔥</div>
+      <h3>Combo System</h3>
+      <p>Chain perfect drops to trigger combos, particles, and screen-shaking effects.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <h3>15 Skins</h3>
+      <p>Unlock Wood, Ice, Galaxy, Neon and more with Shaky Coins.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🌌</div>
+      <h3>10 Backgrounds</h3>
+      <p>Reactive animated backgrounds that match your style — Lava, Matrix, Galaxy and more.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏆</div>
+      <h3>Leaderboards</h3>
+      <p>Compete globally via Game Center. Who stacks the highest?</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <h3>iPhone & iPad</h3>
+      <p>Optimized for every screen — from iPhone SE to iPad Pro.</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h4>How do I earn Shaky Coins?</h4>
+      <p>You earn coins by playing — each block you place gives you coins, and perfect placements give bonus coins. You can also watch a short ad for +15 coins, or purchase coin packs in the store.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How do I unlock skins and backgrounds?</h4>
+      <p>Open the Store from the main menu. Spend your Shaky Coins to unlock any skin or background you want.</p>
+    </div>
+    <div class="faq-item">
+      <h4>I made a purchase but didn't receive my coins.</h4>
+      <p>Open the Store → tap "Buy Coins" → tap "Restore Purchases". If the issue persists, contact us at the email below.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Does the game require internet?</h4>
+      <p>No — you can play offline. Internet is only needed for ads, leaderboards, and in-app purchases.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How do I turn off ads?</h4>
+      <p>Ads only appear voluntarily (Watch Ad for +15 coins) or between games. There is no forced ad interruption during gameplay.</p>
+    </div>
+  </div>
+
+  <!-- SUPPORT -->
+  <div class="support">
+    <h2>Need Help?</h2>
+    <p>Having an issue or have a suggestion? We'd love to hear from you.</p>
+    <p>📧 <a href="mailto:kevingallozait@gmail.com">kevingallozait@gmail.com</a></p>
+    <br>
+    <p style="font-size:14px; color:#555570;">
+      <a href="index.html">Privacy Policy</a>
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2026 Shaky Tower &mdash; All rights reserved.<br>
+    <a href="index.html">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>
